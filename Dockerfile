@@ -25,8 +25,10 @@ RUN bundle install
 
 # Copy all website files
 COPY *.html *.xml *.txt *.yml *.md ./
+COPY _layouts/ _layouts/
+COPY _includes/ _includes/
 COPY _posts/ _posts/
-COPY _data/ _data/
+COPY _static/ _static/
 
 RUN jekyll build
 
