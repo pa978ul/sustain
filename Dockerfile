@@ -27,7 +27,6 @@ RUN bundle install
 COPY *.html *.xml *.txt *.yml *.md ./
 COPY _layouts/ _layouts/
 COPY _includes/ _includes/
-COPY _posts/ _posts/
 COPY static/ static/
 
 RUN jekyll build
