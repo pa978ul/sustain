@@ -6,17 +6,26 @@
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ site.baseurl }}blog.html">Blog</a></li>
-        <li><a href="{{ site.baseurl }}projects.html">Photo Gallery</a></li>
-        <li><a href="{{ site.baseurl }}miscellaneous.html">Miscellaneous</a></li>
-        <li><a href="{{ site.baseurl }}field.html">Field</a></li>
-        <li><a href="{{ site.baseurl }}woods.html">Woods</a></li>
-        <li><a href="{{ site.baseurl }}shed.html">Shed</a></li>
-        <li><a href="{{ site.baseurl }}overview.html">Overview</a></li>
-        <li><a href="{{ site.baseurl }}outhouse.html">Outhouse</a></li>
-        <li><a href="{{ site.baseurl }}barn.html">Barn</a></li>
-        <li><a href="{{ site.baseurl }}swamp.html">Swamp</a></li>
-        <li><a href="{{ site.baseurl }}abandoned_house.html">Abandoned House</a></li>
-        <li><a href="{{ site.baseurl }}hunting_cabin.html">Hunting Cabin</a></li>
+
+        <!-- The "Photos" navbar entry shows a dropdown, which presents a list of links to photo albums
+             See docs at https://bootstrapdocs.com/v3.3.5/docs/components/#navbar -->
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Photos<span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+            <li><a href="{{ site.baseurl }}miscellaneous.html">Miscellaneous</a></li>
+            <li><a href="{{ site.baseurl }}field.html">Field</a></li>
+            <li><a href="{{ site.baseurl }}woods.html">Woods</a></li>
+            <li><a href="{{ site.baseurl }}shed.html">Shed</a></li>
+            <li><a href="{{ site.baseurl }}overview.html">Overview</a></li>
+            <li><a href="{{ site.baseurl }}outhouse.html">Outhouse</a></li>
+            <li><a href="{{ site.baseurl }}barn.html">Barn</a></li>
+            <li><a href="{{ site.baseurl }}swamp.html">Swamp</a></li>
+            <li><a href="{{ site.baseurl }}abandoned_house.html">Abandoned House</a></li>
+            <li><a href="{{ site.baseurl }}hunting_cabin.html">Hunting Cabin</a></li>
+          </ul>
+        </li>
+
         <li><a href="{{site.baseurl }}contact_info.html">Contact info</a></li>
       </ul>
     </div>
